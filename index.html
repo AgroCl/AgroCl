@@ -1,41 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AgroCL - Venta de tierra de hoja natural y frutos secos de alta calidad en Chile. Contacto, ubicación, galería, preguntas frecuentes y más.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AgroCL - Venta de composta natural en Chile. Contacto, ubicación, galería y más.">
   <title>AgroCL</title>
+
+  <!-- Tipografías modernas desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding-top: 60px; background-color: #fdfdfb; color: #333; }
-    .navbar { position: fixed; top: 0; left: 0; right: 0; height: 60px; background-color: #1f4c2f; color: white;
-      display: flex; justify-content: space-between; align-items: center; padding: 0 1.5rem; z-index: 1000;
-      transition: top 0.3s ease-in-out; }
-    .navbar-left { display: flex; align-items: center; gap: 10px; }
-    .navbar-left img { width: 40px; height: 40px; border-radius: 8px; background-color: white; padding: 2px; }
-    .nombre-empresa { font-weight: bold; font-size: 1.2rem; }
-    .navbar-right a { margin-left: 15px; color: white; text-decoration: none; font-weight: bold; }
-    .navbar-right a:hover { color: #d8b98c; }
-    .seccion { padding: 2rem; background-color: white; margin: 1rem; border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .galeria img { width: 100%; max-width: 250px; margin: 10px; border-radius: 8px; }
-    .formulario input, .formulario textarea { width: 100%; padding: 10px; margin-bottom: 1rem;
-      border: 1px solid #ccc; border-radius: 5px; }
-    .formulario button { background-color: #5a3c1a; color: white; padding: 10px 20px; border: none;
-      border-radius: 5px; cursor: pointer; }
-    .formulario button:hover { background-color: #764c27; }
-    .iconos-contacto a { margin-right: 10px; color: #1f4c2f; font-weight: bold; text-decoration: none; }
-    .iconos-contacto a:hover { color: #5a3c1a; text-decoration: underline; }
+    body {
+      font-family: 'Mulish', sans-serif;
+      margin: 0;
+      padding-top: 60px;
+      background-color: #F2E8CF;
+      color: #333;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: #6A994E;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1.5rem;
+      z-index: 1000;
+      transition: top 0.3s ease-in-out;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-left img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background-color: white;
+      padding: 4px;
+    }
+
+    .nombre-empresa {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .navbar-right a {
+      margin-left: 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    .seccion {
+      padding: 2rem;
+      background-color: white;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-family: 'Quicksand', sans-serif;
+      color: #386641;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 250px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    .formulario input, .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .formulario button {
+      background-color: #6A994E;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .iconos-contacto a {
+      margin-right: 10px;
+      color: #6A994E;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .iconos-contacto a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
-      .navbar { flex-direction: column; height: auto; padding: 0.5rem 1rem; }
-      .navbar-right { margin-top: 0.5rem; }
+      .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem 1rem;
+      }
+      .navbar-right {
+        margin-top: 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <nav class="navbar" id="navbar">
     <div class="navbar-left">
-      <img src="img/logo-agrocl.png" alt="Logo AgroCL">
+      <img src="logo_agrocl.png" alt="Logo AgroCL">
       <span class="nombre-empresa">AgroCL</span>
     </div>
     <div class="navbar-right">
@@ -44,28 +137,29 @@
       <a href="#mapa">Ubicación</a>
     </div>
   </nav>
+
   <section class="seccion" id="productos">
     <h2>Nuestros Productos</h2>
+    <p>Actualmente ofrecemos:</p>
     <ul>
-      <li><strong>Tierra de hoja natural</strong>: Saco de 25L - Ideal para jardines y macetas.</li>
-      <li><strong>Tierra compostada</strong>: Saco de 30L - Perfecta para mejorar el suelo agrícola.</li>
-      <li><strong>Mezcla tierra y compost</strong>: Saco de 40L - Excelente balance para plantas y cultivos.</li>
+      <li><strong>Sacos de composta de 20 kg</strong> - Composta orgánica ideal para enriquecer tus suelos y cultivos.</li>
     </ul>
   </section>
+
   <section class="seccion" id="faq">
     <h2>Preguntas Frecuentes</h2>
-    <p><strong>¿Cómo se hace el despacho?</strong><br>Despachamos a domicilio en toda la Región Metropolitana. Se coordina por WhatsApp.</p>
+    <p><strong>¿Cómo se hace el retiro?</strong><br>Tenemos nuestra bodega en la cual se retira el pedido. Se coordina por WhatsApp.</p>
     <p><strong>¿Tienen venta al por mayor?</strong><br>Sí, tenemos precios especiales para pedidos grandes. Escríbenos por correo.</p>
     <p><strong>¿Cómo se puede pagar?</strong><br>Aceptamos transferencias, efectivo y pronto incluiremos pagos con tarjeta.</p>
   </section>
+
   <section class="seccion galeria" id="galeria">
     <h2>Galería de Fotos</h2>
     <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-      <img src="https://via.placeholder.com/250x200?text=Tierra+1" alt="Tierra de hoja 1">
-      <img src="https://via.placeholder.com/250x200?text=Tierra+2" alt="Tierra de hoja 2">
-      <img src="https://via.placeholder.com/250x200?text=Uso+en+jardín" alt="Jardín con tierra de hoja">
+      <img src="https://via.placeholder.com/250x200?text=Composta" alt="Saco de composta 20 kg">
     </div>
   </section>
+
   <section class="seccion" id="contacto">
     <h2>Formulario de Contacto</h2>
     <form class="formulario" action="https://formspree.io/f/tu-codigo" method="POST">
@@ -79,26 +173,33 @@
       <p>
         📧 Correo: <a href="mailto:AgroCLcontacto@gmail.com">AgroCLcontacto@gmail.com</a><br>
         📱 WhatsApp: <a href="https://wa.me/56912345678" target="_blank">+56 9 4560 5058</a><br>
-        👍 Facebook: <a href="https://facebook.com/hojaxpress" target="_blank">facebook.com/hojaxpress</a>
+        👍 Facebook: <a href="https://facebook.com/agrocl" target="_blank">facebook.com/agrocl</a>
       </p>
     </div>
   </section>
+
   <section class="seccion" id="mapa">
-    <h2>Ubicación</h2>
-    <p>Nos encontramos en Santiago, Chile.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.327494196731!2d-70.64724072434791!3d-33.45693949732848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a7210f6a71%3A0x9d67ef7cf61f94fe!2sSantiago%2C%20Chile!5e0!3m2!1ses!2scl!4v1714081834459!5m2!1ses!2scl"
-      width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
+  <h2>Ubicación</h2>
+  <p>Nos ubicamos en Santa Rosa, Chile.</p>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.812227507342!2d-71.2823889!3d-33.6460833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM4JzQ1LjkiUyA3McKwMTYnNTYuNiJX!5e0!3m2!1ses!2scl!4v1722100000000!5m2!1ses!2scl" 
+    width="100%" 
+    height="300" 
+    style="border:0; border-radius:10px;" 
+    allowfullscreen="" 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+
   <script>
     let prevScrollpos = window.pageYOffset;
     const navbar = document.getElementById("navbar");
+
     window.onscroll = function() {
       const currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        navbar.style.top = "0";
-      } else {
-        navbar.style.top = "-70px";
-      }
+      navbar.style.top = (prevScrollpos > currentScrollPos) ? "0" : "-70px";
       prevScrollpos = currentScrollPos;
     }
   </script>
